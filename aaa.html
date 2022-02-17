@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Income and Expenses Details</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <h1 class="text-center text-info">Family Income and Expenses</h1>
+    </header>
+
+    <main>
+
+        <section>
+            <div class="container">
+                <div class="row mt-5 mb-5 ">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <img src="./images/pexels-karolina-grabowska-4968630.jpg" alt="Family Income and Expenses" width="505px" height="615px">
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12 text-center">
+                        <h4>Income</h4>
+                        <label>Income: <input type="text" name="" id="income-input"></label>
+                        <h4>Expenses</h4>
+                        <label>Food: <input id="food-input" type="text" name="" id=""></label><br><br>
+                        <label>Rent: <input id="rent-input" type="text" name="" id=""></label><br><br>
+                        <label>Clothes: <input id="clothes-input" type="text" name="" id=""></label> <br><br>
+                        <button id="calculate-button" class="bg-info text-white">Calculate</button><br><br>
+                        <h4>Total Expenses:<span id="total-cost">00</span> </h4>
+                        <h4>Balance: <span id="balance-input">00</span></h4>
+                        <label>Save:<input type="text" name="" id="save-input"></label>
+                        <span>%<span>
+                        <button id="save-button" class="bg-info text-white">Save</button>
+                        <h4>Saving Amount: <span id="saving-amount">00</span> </h4>
+                        <h4>Remaining Balance: <span id="remaining-balance">00</span> </h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+
+    <script src="js/financial-statistics.js"></script>
+</body>
+</html>

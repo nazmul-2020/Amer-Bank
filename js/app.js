@@ -2,32 +2,32 @@
 
 document.getElementById('cal-btn').addEventListener('click', function(){
     
-    // ------------ Income
+    // ------------ Income------------
     const incomeInput = document.getElementById('income-input');
     const incomeInputText = parseFloat(incomeInput.value);
 
-    // ------------------ Food
+    // ------------------ Food ---------------
     const foodInput = document.getElementById('food-input');
     const foodInputText = parseFloat(foodInput.value);
-        foodInput.value = '';
+        // foodInput.value = '';
 
-    // ---------------- rent
+    // ---------------- rent -----------------
     const rentInput = document.getElementById('rent-input');
     const rentInputText = parseFloat(rentInput.value);
-        rentInput.value = '';
+        // rentInput.value = '';
 
-    // -------------- clothes
+    // -------------- clothes -----------------
     const clothesInput = document.getElementById('clothes-input');
     const clothesInputText = parseFloat(clothesInput.value);
-        clothesInput.value = '';
+        // clothesInput.value = '';
 
-    // -------------Total-expenses
+    // -------------Total-expenses ---------------
     const totalExpensesInput = document.getElementById('total-expenses');
     const totalExpensesAmount = parseFloat(totalExpensesInput.innerText);
     const totalCost = foodInputText + rentInputText + clothesInputText;
         totalExpensesInput.innerText = totalExpensesAmount + totalCost;
     
-    // ------------------------balance
+    // ------------------------balance -------------
      const balanceInput = document.getElementById('balance-money');
      const balanceInputAmount = parseFloat(balanceInput.innerText);
         balanceInput.innerText = incomeInputText - totalCost;
@@ -37,22 +37,23 @@ document.getElementById('cal-btn').addEventListener('click', function(){
     //----------------- Save --------------------------//
 
     document.getElementById('save-btn').addEventListener('click', function(){
-
+        // ------------ Income------------
         const incomeInput = document.getElementById('income-input');
         const incomeInputText = parseFloat(incomeInput.value);
         
+        // ------------saveInput--------------------
         const saveInput = document.getElementById('save-input');
         const saveInputText = parseFloat(saveInput.value);
-    
+
+        // ------------- Saving Amount ----------------
         const savingAmount = document.getElementById('saving-amount');
-        // const savingAmountText = parseFloat(savingAmount.innerText);
             savingAmount.innerText = (incomeInputText * saveInputText) / 100;
 
+        // ------------------------balance -------------
         const balanceInput = document.getElementById('balance-money');
         const balanceInputAmount = parseFloat(balanceInput.innerText);
-       
+
+        //------------Remaining Balance----------------
         const remainingBalanceInput = document.getElementById('remaining-Balance');
-        // const remainingBalanceAmount = parseFloat(remainingBalanceInput.innerText);
-       
             remainingBalanceInput.innerText = balanceInputAmount - savingAmount.innerText;
     })

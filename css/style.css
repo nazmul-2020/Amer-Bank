@@ -2,10 +2,12 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .form{
-    margin: 20px;
-    width: 500px;
-    text-align: center;
+   background-color: rgba(169, 169, 169, 0.247);
 }
 h1{
-    color: aqua;
+    color: rgba(114, 240, 135, 0.89);
+}
+
+.photo img{
+    width: 705px;
 }

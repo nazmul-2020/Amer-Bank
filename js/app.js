@@ -5,21 +5,22 @@ document.getElementById('cal-btn').addEventListener('click', function(){
     // ------------ Income------------
     const incomeInput = document.getElementById('income-input');
     const incomeInputText = parseFloat(incomeInput.value);
+    
 
     // ------------------ Food ---------------
     const foodInput = document.getElementById('food-input');
     const foodInputText = parseFloat(foodInput.value);
-        // foodInput.value = '';
+        foodInput.value = '';
 
     // ---------------- rent -----------------
     const rentInput = document.getElementById('rent-input');
     const rentInputText = parseFloat(rentInput.value);
-        // rentInput.value = '';
+        rentInput.value = '';
 
     // -------------- clothes -----------------
     const clothesInput = document.getElementById('clothes-input');
     const clothesInputText = parseFloat(clothesInput.value);
-        // clothesInput.value = '';
+        clothesInput.value = '';
 
     // -------------Total-expenses ---------------
     const totalExpensesInput = document.getElementById('total-expenses');
@@ -40,7 +41,7 @@ document.getElementById('cal-btn').addEventListener('click', function(){
         // ------------ Income------------
         const incomeInput = document.getElementById('income-input');
         const incomeInputText = parseFloat(incomeInput.value);
-        
+
         // ------------saveInput--------------------
         const saveInput = document.getElementById('save-input');
         const saveInputText = parseFloat(saveInput.value);
